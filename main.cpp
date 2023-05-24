@@ -113,15 +113,15 @@ int main(int argc, char **argv) {
 
 
         // поиск студента по имени
-        /*string name;
+        string name;
         cout << "введите имя для поиска студента " << endl;
         cin >> name;
         Student S1 = G.getStudent(name);
-        cout << S1;*/
+        cout << S1;
 
 
         // изменение данных студента
-        /*string name_, NumZach;
+        string name_, NumZach;
         int KolDis;
         cout << "введите имя, номер зачетки и количество предметов " << endl;
         cin >> name_ >> NumZach >> KolDis;
@@ -138,23 +138,23 @@ int main(int argc, char **argv) {
         S.reKolDis(KolDis);
         S.remarks(arr);
 
-        cout << S;*/
+        cout << S;
 
         //использование методов группы
-        /*cout << G.MidleOfGrup() << endl;
+        cout << G.MidleOfGrup() << endl;
         cout << G.MidleDis(0) << endl;
         cout << G.getFacultet() << endl;
         cout << G.getKolStudents() << endl;
         G.PrintOtl();
-        G.PrintZad();*/
+        G.PrintZad();
 
 
         // создание потока для вывода группы
-        /*thread thread1(printGrup, ref(G));
+        thread thread1(printGrup, ref(G));
 
 
         thread2.join();
-        thread1.join();*/
+        thread1.join();
 
     }
     return 0;
